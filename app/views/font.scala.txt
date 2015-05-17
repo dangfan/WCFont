@@ -1,0 +1,6 @@
+@(family: String, hash: String, url: String)
+
+@@font-face {
+    font-family: "@family";
+    src: url(@url/fonts/@hash) format("woff");
+}
