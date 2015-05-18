@@ -1,9 +1,11 @@
 WCFont
 ======
 
+[DEMO](https://dangfan.me/zh-Hans/posts/wcfont)
+
 使用 [sfntly](https://code.google.com/p/sfntly/) 动态裁剪中文字体，让网页中嵌入中文字体成为可能！
 
-# 使用方法
+## 使用方法
 
 第一步，在服务器上准备好字体文件：`yourfont.ttf`（由于 sfntly 的限制，只支持 true-type 格式）。
 
@@ -17,13 +19,13 @@ WCFont
 <script src="//example.com/?s=.title&family=yourfont"></script>
 ```
 
-# 配置
+## 配置
 
-## HTTP 服务器
+### HTTP 服务器
 
 您需要将放置字体的域名下的 `/fonts` 目录对应到您放置输出字体的目录。
 
-## `conf/application.conf`
+### `conf/application.conf`
 
 -  `font.input`：字体输入目录
 -  `font.output`：字体输出目录
